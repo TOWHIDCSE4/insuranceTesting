@@ -1,0 +1,435 @@
+.manageFinanceKnowledge {
+  &-container {
+    width: 100%;
+    background: unset;
+
+    .list-option {
+      padding: 17px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid $grey-border-color;
+    }
+    .ant-segmented {
+      background-color: #f2f2f2;
+      border-radius: 10px;
+
+      &-item {
+        border-radius: 10px;
+        padding: 8px 24px;
+        font-weight: $font-weight-bold;
+        min-width: max-content;
+        &-label {
+          font-size: $font-size-base;
+          font-weight: $font-weight-bold;
+          color: $black-color;
+          padding: unset;
+          line-height: 1.8rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &.ant-segmented-item-selected {
+          background-color: $green-color;
+
+          .ant-segmented-item-label {
+            color: $white-color;
+          }
+        }
+      }
+      &-thumb {
+        background-color: $green-color;
+        border-radius: 10px;
+        &.ant-segmented-item-selected {
+          color: $white-color;
+        }
+      }
+    }
+    .ant-list {
+      border-radius: 20px;
+      height: 100%;
+      &-header {
+        border-bottom: 1px solid $grey-border-color;
+        .title {
+          color: $black-color;
+          padding: unset !important;
+        }
+      }
+      &-header,
+      &-footer {
+        padding: 13px 17px;
+      }
+      &-footer {
+        border-top: 1px solid $grey-border-color;
+        .btn-add-new {
+          margin-left: auto;
+        }
+        .ant-btn-primary:focus,
+        .ant-btn-primary:hover {
+          background: unset;
+        }
+      }
+
+      &-item {
+        border-bottom: 1px solid #ebebeb;
+        padding: 0 17px !important;
+        padding: 0;
+        cursor: pointer;
+        &:last-child {
+          border-bottom: unset !important;
+        }
+        .ant-typography {
+          width: 100%;
+          padding: 10px 0;
+          font-size: $font-size-base;
+          font-weight: $font-weight-semibold;
+          border-radius: 10px;
+        }
+        /* &:hover {
+          .ant-typography {
+            background-color: $green-color;
+            color: $white-color;
+          }
+        } */
+        &.active {
+          .ant-typography {
+            background-color: $green-color;
+            color: $white-color;
+            padding: 10px 16px;
+          }
+        }
+      }
+    }
+    &_list {
+      .ant-list-footer {
+        border-top: unset;
+      }
+    }
+
+    .ant-layout-content {
+      width: 100%;
+      min-height: 70vh;
+      background-color: $white-color;
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .ant-btn {
+      &.ant-btn-circle {
+        @extend .btn-add-new;
+        margin-right: unset;
+        margin-top: unset;
+      }
+    }
+
+    .manageContent {
+      .ant-input {
+        font-size: $font-size-base;
+        padding: 10px 13px;
+        font-weight: $font-weight-bold;
+        color: $black-color;
+      }
+      .textarea {
+        padding: 13px 17px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        &-title {
+          min-width: 80px;
+        }
+        &-input {
+          padding: unset;
+
+          &.background {
+            background-color: #f3f3f3;
+          }
+        }
+      }
+      &-container {
+        .title {
+          padding: unset;
+        }
+        .ant-input-affix-wrapper,
+        .manageContentInput-upload {
+          border-bottom: 1px dashed $grey-border-color;
+          border-radius: unset;
+        }
+        .ant-input-affix-wrapper {
+          padding: 0 17px;
+          &.color-green {
+            .ant-input {
+              color: $green-color;
+            }
+          }
+          &:focus {
+            box-shadow: unset;
+          }
+          &.ant-input-affix-wrapper-focused {
+            box-shadow: unset;
+          }
+        }
+        .ant-input-prefix {
+          font-size: $font-size-base;
+          color: $black-color;
+        }
+
+        .manageContentInput-upload {
+          padding: 12px 17px;
+          .ant-upload {
+            border: unset;
+            border-radius: 6px;
+            background-color: #f3f3f3;
+            overflow: hidden;
+            &-list-item {
+              border-radius: 6px;
+              overflow: hidden;
+              padding: 5px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+              &.ant-upload-list-item-done {
+                border-color: $green-color;
+              }
+            }
+          }
+          .upload-content {
+            width: 100%;
+            height: 100%;
+            color: $gray-light-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: unset;
+            cursor: pointer;
+          }
+          .ant-upload-list-item-actions {
+            .ant-btn:hover {
+              border-color: transparent;
+            }
+          }
+          .avatar-title {
+            display: block;
+            color: $black-color;
+            font-size: $font-size-base;
+            margin-bottom: 10px;
+          }
+          .ant-tooltip-inner {
+            background-color: $green-color;
+            border-radius: 10px;
+          }
+          .ant-tooltip-arrow-content {
+            &::before {
+              background: $green-color;
+            }
+          }
+        }
+      }
+
+      &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_icon {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          img {
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+            cursor: pointer;
+            &:last-child {
+              margin-left: 13px;
+            }
+          }
+        }
+      }
+      &-footer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .ant-input {
+          font-size: $font-size-base;
+          min-width: 460px;
+          background-color: $secondary-color;
+          border-radius: 5px;
+        }
+        .ant-input-affix-wrapper {
+          padding: 0 17px;
+          &.color-green {
+            .ant-input {
+              color: $green-color;
+            }
+          }
+          &:focus {
+            box-shadow: unset;
+          }
+          &.ant-input-affix-wrapper-focused {
+            box-shadow: unset;
+          }
+        }
+        &_button {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-left: auto;
+          .ant-btn {
+            font-size: $font-size-base;
+            font-weight: $font-weight-bold;
+            padding: 10px 50px;
+            margin-right: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+          }
+          .btn-cancer {
+            &:hover {
+              border-color: unset;
+            }
+            &:focus {
+              border-color: $red-color;
+              color: $red-color;
+            }
+          }
+
+          .btn-save {
+            font-size: 1.2rem;
+            margin-right: unset;
+            background-color: $green-color;
+            border-color: $green-color;
+            &:hover,&:focus{
+              background: $green-color;
+            }
+          }
+        }
+      }
+      .ant-input-prefix,
+      .avatar-title,
+      .textarea-title {
+        font-weight: $font-weight-bold;
+      }
+      .questionAnswerContent {
+        .ant-input-prefix {
+          min-width: 80px;
+        }
+
+        &-answer {
+          padding: 15px 17px;
+          &_main {
+            border: 1px dashed #c5c5c5;
+            border-radius: 6px;
+          }
+          &_auth {
+            padding: 8px 15px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            p {
+              color: $grey-dark-color;
+              font-size: $font-size-base;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              span {
+                font-size: $font-size-base;
+                font-weight: $font-weight-bold;
+                color: $black-color;
+                margin-left: 13px;
+              }
+              img {
+                width: 12px;
+                height: 12px;
+                object-fit: cover;
+                margin-right: 5px;
+              }
+              &:first-child {
+                margin-right: 40px;
+              }
+            }
+          }
+          &_content {
+            background-color: #f3f3f3;
+            border-radius: 6px;
+            border-top: 1px dashed #c5c5c5;
+          }
+        }
+        &-pagination {
+          width: 100%;
+          padding: 7px 17px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .ant-btn {
+            margin-left: unset;
+          }
+          .ant-pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &-item,
+            &-jump-prev,
+            &-jump-next {
+              display: none;
+            }
+            &-prev,
+            &-next {
+              font-size: $font-size-base;
+              color: $black-color;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .icon {
+                width: 35px;
+                height: 35px;
+                border-radius: 8px;
+                color: $green-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #eff9f8;
+                &:first-child {
+                  margin-right: 7px;
+                }
+                &:last-child {
+                  margin-left: 7px;
+                }
+                span {
+                  font-size: 1.8rem;
+                  font-weight: $font-weight-bold;
+                }
+              }
+              span {
+                font-size: $font-size-base;
+                font-weight: $font-weight-semibold;
+              }
+              &.ant-pagination-disabled {
+                color: $green-color;
+                span {
+                  color: $gray-light-color;
+                }
+                .icon {
+                  background-color: unset;
+                }
+              }
+            }
+            /* &-prev {
+              .btn-prev {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            } */
+          }
+        }
+      }
+    }
+  }
+}

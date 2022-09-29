@@ -1,0 +1,222 @@
+.config_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white-color;
+    padding: 10px 32px;
+    margin: 0px -30px;
+
+    h3 {
+        font-size: 18px;
+        line-height: 22.5px;
+        font-weight: 700;
+    }
+
+    button {
+        font-size: 1.2rem;
+
+        img {
+            margin-right: 11px;
+        }
+    }
+}
+
+.modal_change_pass {
+    .ant-modal-body {
+        padding: 0px !important;
+    }
+}
+
+.config_content {
+    background-color: $white-color;
+    margin-top: 16px;
+    border-radius: 16px;
+
+    .config_content_title {
+        padding: 16px 27px;
+        border-bottom: 1px solid $grey-border-color;
+
+        h2 {
+            line-height: 25px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+
+    .config_content_body {
+
+        // padding: 13px 27px;
+        .config_content_body-avatar {
+            padding: 9px 27px;
+
+            .upload-content {
+                display: flex;
+                flex-direction: column;
+            }
+
+            p {
+                font-weight: 700;
+                font-size: 1.4rem;
+            }
+        }
+
+        .ant-form-item-row {
+            display: flex;
+            flex-direction: column;
+
+            .ant-form-item-label {
+                display: flex;
+                justify-content: flex-start;
+
+                label::after {
+                    display: none;
+                }
+            }
+        }
+
+        .config_content_body-infoUser {
+            padding: 9px 27px 19px 27px;
+            border-bottom: 1px dashed $grey-border-color;
+
+            input {
+                height: 40px !important;
+                border-radius: 5px;
+                font-weight: 700;
+                font-size: 1.4rem;
+                &.ant-input-disabled {
+                    border: none;
+                }
+            }
+        }
+
+        .config_content_body_checkbox-group {
+            border-bottom: 1px solid $grey-border-color;
+
+            .border_right {
+                padding: 15px 27px;
+                border-right: 1px dashed $grey-border-color;
+            }
+
+            .ant-checkbox-wrapper {
+                display: flex;
+                align-items: baseline;
+
+                .ant-checkbox {
+                    input {
+                        width: 24px !important;
+                        height: 24px !important;
+                    }
+                }
+            }
+        }
+
+        .config_content_body_button-group {
+            padding: 20px 26px 26px 21px;
+            display: flex;
+            justify-content: space-between;
+
+            .config_content_body_button-group_right {
+                display: flex;
+
+                .btn-danger {
+                    margin-right: 8px;
+                    height: 35px;
+                    width: 127px;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+.form_change_password {
+    position: relative;
+    margin: -18px 0 -18px -20px;
+
+    .header_form, .body_form, .footer_form{
+        padding: 0px 36px 0px 33px;
+    }
+    .header_form {
+        text-align: center;
+        padding: 12px 37px 12px 32px;
+        margin-bottom: 50px;
+    }
+
+    .linear {
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        position: absolute;
+        top: 90px;
+        height: 158px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        width: 335px;
+        padding: 20px 0px 0px 0px;
+        background: linear-gradient(182.43deg, rgba(53, 179, 111, 0.3) 2.03%, rgba(217, 217, 217, 0) 17.22%);
+    }
+
+    .body_form {
+        border-top: 1px solid $grey-border-color;
+        border-bottom: 1px solid $grey-border-color;
+        font-weight: 600;
+        font-size: 13px;
+        &-content {
+            // padding: 21px 37px 11px 32px;
+            padding: 21px 0px 11px 0px;
+
+            .ant-form-item {
+                margin-bottom: 10px;
+                width: 267px;
+                .ant-form-item-label{
+                    padding: 0px !important;
+                }
+                .ant-space-vertical {
+                    width: 100%;
+                }
+
+                .ant-input-password {
+                    padding: 8px 12px;
+                    background-color: $secondary-color;
+                    border: none;
+                    border-radius: 5px;
+
+                    &:hover {
+                        background-color: $secondary-color;
+
+                    }
+
+                    input {
+                        background-color: $secondary-color
+                    }
+                }
+
+                // .ant-input-affix-wrapper-focus{
+                //     box-shadow: none !important;
+                //     border: 1px solid $green-color !important;
+                // }
+            }
+
+            .ant-form-item-row {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    display: flex;
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+
+    .footer_form {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 12px;
+        padding-bottom: 17px;
+    }
+}

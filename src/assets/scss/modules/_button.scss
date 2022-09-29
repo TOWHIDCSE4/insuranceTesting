@@ -1,0 +1,158 @@
+.btn-primary {
+  @extend %btn-bg-green;
+  color: $white-color;
+
+  &:hover {
+    @extend %btn-bg-green;
+    opacity: 0.7;
+  }
+
+  &:active {
+    @extend %btn-bg-green;
+    opacity: 0.7;
+  }
+
+  &:focus {
+    @extend %btn-bg-green;
+    opacity: 0.7;
+  }
+}
+
+.btn-danger {
+  @extend %btn-bg-white;
+  color: $red-color;
+  border: 1px solid $red-color;
+
+  &:hover {
+    @extend %btn-bg-white;
+    border: 1px solid $red-color;
+    opacity: 0.7;
+  }
+
+  &:active {
+    @extend %btn-bg-white;
+    opacity: 0.7;
+  }
+
+  &:focus {
+    @extend %btn-bg-white;
+    opacity: 0.7;
+  }
+}
+
+.btn-next-prev {
+  @extend %btn-bg-grey;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 8px;
+
+  &:hover {
+    @extend %btn-bg-grey;
+    opacity: 0.7;
+  }
+}
+
+.btn-circle {
+  @extend %btn-bg-grey;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: $green-light-color;
+  border-radius: 50%;
+  color: $black-color;
+  padding: 0;
+  &:hover {
+    @extend %btn-bg-grey;
+    opacity: 0.7;
+  }
+}
+
+.btn-add-new {
+  @extend %btn-bg-white;
+  color: $green-color;
+  padding: 0;
+  column-gap: 11px;
+  background-color: transparent;
+
+  img {
+    background: $green-color;
+    padding: 4px;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    color: $green-color;
+    opacity: 0.7;
+  }
+  &:focus {
+    color: $green-color;
+  }
+}
+
+.btn-bgWhite-textGreen-borGreen {
+  background-color: #ffffff;
+  border: 1px solid $green-color;
+  border-radius: 10px;
+  height: 25px;
+  color: $green-color;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+    color: $green-color;
+  }
+}
+
+.btn-table {
+  @extend %flex-end;
+  // column-gap: 20px;
+
+  &__btn {
+    @extend %flex-centered;
+    font-size: 1.4rem;
+    color: $grey-dark-color;
+    border: none;
+    box-shadow: none;
+    background: none;
+    padding: 0;
+    height: 2rem;
+    font-weight: $font-weight-semibold;
+    column-gap: 7px;
+  }
+
+  &-sms {
+    &:focus,
+    &:hover {
+      color: $green-color;
+      background: transparent;
+      img {
+        filter: invert(57%) sepia(52%) saturate(461%) hue-rotate(95deg)
+        brightness(97%) contrast(99%);
+      }
+    }
+  }
+
+  &-email {
+    &:focus,
+    &:hover {
+      color: $green-color;
+      background: transparent;
+      img {
+        filter: invert(57%) sepia(52%) saturate(461%) hue-rotate(95deg)
+        brightness(97%) contrast(99%);
+      }
+    }
+  }
+
+  &-del {
+    &:focus,
+    &:hover {
+      background: transparent;
+      img {
+        filter: invert(70%) sepia(64%) saturate(5423%) hue-rotate(323deg) brightness(99%) contrast(127%);
+      }
+    }
+  }
+}

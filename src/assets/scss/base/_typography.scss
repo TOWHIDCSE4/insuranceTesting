@@ -1,0 +1,10 @@
+.text-break {
+    display: block;
+    white-space: nowrap;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.text-bold {
+    font-weight: $font-weight-bold;
+}

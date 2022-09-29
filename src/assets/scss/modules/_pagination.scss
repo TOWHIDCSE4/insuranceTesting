@@ -1,0 +1,88 @@
+.ant-pagination-options {
+  position: absolute;
+  left: 0px;
+
+  &::before {
+    content: 'Hiển thị ';
+    color: $gray-light-color;
+    font-size: 12px;
+  }
+
+  &::after {
+    content: ' trên 1 trang ';
+    color: $gray-light-color;
+    font-size: 12px;
+  }
+
+  .ant-pagination-options-size-changer {
+    .ant-select-selector {
+      border: none;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+.ant-pagination {
+  position: relative;
+  @extend %flex-end;
+  align-items: center;
+  padding: 3rem 1.3rem;
+
+  .ant-pagination-item {
+    border: none;
+    border-radius: 50%;
+    @extend %flex-centered;
+    min-width: 25px;
+    height: 25px;
+    margin: 0px;
+    background: transparent;
+    font-size: 1.2rem;
+
+    &-active {
+      background-color: $green-color;
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+  .ant-pagination-item-link {
+    background: transparent;
+
+    svg {
+      height: 10px;
+    }
+  }
+
+  .ant-pagination-prev {
+    .ant-pagination-item-link:after {
+      content: 'Trước';
+      opacity: 0.7;
+      margin-right: 8px;
+      font-size: 1.1rem;
+    }
+  }
+
+  .ant-pagination-next {
+    .ant-pagination-item-link::before {
+      content: 'Tiếp';
+      opacity: 0.7;
+      margin-left: 8px;
+      font-size: 1.1rem;
+    }
+  }
+
+  .ant-pagination-prev,
+  .ant-pagination-next {
+    button {
+      border: none;
+    }
+  }
+
+  .ant-pagination-disabled {
+    button {
+      color: $gray-light-color  !important;
+    }
+  }
+}

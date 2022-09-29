@@ -1,0 +1,97 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: $primary-bg-color;
+  font-size: 1.4rem;
+  font-family: $font-body;
+  font-weight: $font-weight-semibold;
+  letter-spacing: 0.1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 1.8rem;
+  font-weight: $font-weight-bold;
+  color: $black-color;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $gray-light-color;
+  border-radius: 34px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: $gray-light-color;
+}
+
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover,
+.ant-btn:focus,
+.ant-btn:hover,
+.ant-checkbox-input:focus + .ant-checkbox-inner,
+.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ant-checkbox:hover .ant-checkbox-inner {
+  border-color: $green-color;
+}
+
+.ant-btn:focus {
+  color: $white-color;
+}
+
+.ant-input-affix-wrapper-focused,
+.ant-input-affix-wrapper:focus {
+  box-shadow: 0 0 0 2px #3dbd7840;
+}
+
+.ant-form-item {
+  margin: 0;
+}
+
+.ant-form-vertical .ant-form-item-label {
+  padding: 0 0 6px;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner {
+  background-color: #27c456 !important;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+  background-color: #27c456 !important;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+  border-color: #1f9643e5 !important;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single)::before,
+.ant-picker-cell-in-view.ant-picker-cell-in-range::before,
+.ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single)::before,
+.ant-picker-time-panel-column
+  > li.ant-picker-time-panel-cell-selected
+  .ant-picker-time-panel-cell-inner {
+  background: #e6ffe8 !important;
+}
+
+.ant-picker-ok .ant-btn {
+  border-color: unset !important;
+  background: linear-gradient(180deg, #36b872, #30a867) !important;
+}
+
+.ant-empty-normal {
+  margin: 10px 0;
+}
+

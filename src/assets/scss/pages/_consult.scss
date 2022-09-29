@@ -1,0 +1,41 @@
+.consultant_container {
+    margin-top: 12px;
+    .consultant_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+  
+      .header_left {
+        display: flex;
+        align-items: center;
+        column-gap: 45px;
+        .header_list_container {
+          .header_list {
+            display: flex;
+            li {
+              height: 100%;
+              border-right: 1px solid $list-border;
+              padding-right: 20px;
+              margin-right: 20px;
+              .list_item_badge {
+                background-color: rgb(229, 250, 229);
+                color: rgb(0, 164, 52);
+                padding: 10px;
+                border-radius: 10px;
+                font-weight: 700;
+              }
+              .item_num {
+                color: rgb(0, 164, 52);
+              }
+            }
+          }
+        }
+      }
+  
+      .header_right {
+          width: 100px;
+      }
+    }
+  }
+  

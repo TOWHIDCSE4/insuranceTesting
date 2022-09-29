@@ -1,0 +1,157 @@
+.modal-custom {
+  .ant-modal-content {
+    border-radius: 20px;
+  }
+
+  .ant-modal-header {
+    border-radius: 20px 20px 0 0;
+    padding: 26px 30px 17px 30px;
+    border-bottom: 1px solid $grey-border-color;
+
+    .ant-modal-title {
+      font-weight: $font-weight-bold;
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  .ant-modal-body {
+    padding: 10px 30px 20px 30px;
+
+    .footer-modal {
+      @extend %flex-end;
+      border-top: 1px solid $grey-border-color;
+      margin: 0 -30px;
+
+      .ant-form-item-row{
+        padding: 0 30px;
+        margin-top: 16px;
+      }
+      .ant-form-item-control-input-content {
+        display: flex;
+        column-gap: 8px
+      }
+    }
+  }
+
+  .ant-modal-footer {
+    @extend %flex-end;
+    border-top: 1px solid $grey-border-color;
+    padding: 10px 30px 20px 30px;
+
+    .ant-btn-primary {
+      @extend .btn-primary;
+      padding: 0 35px;
+    }
+
+    .ant-btn-default {
+      @extend .btn-danger;
+      padding: 0 35px;
+    }
+  }
+}
+
+.ant-progress {
+  @extend %flex-centered;
+  flex: 1;
+
+  .ant-progress-inner {
+    overflow: initial;
+
+    .ant-progress-bg {
+      background: $green-color;
+      height: 4px !important;
+
+      &:after {
+        content: "";
+        width: 17px;
+        height: 17px;
+        background: $white-color;
+        position: absolute;
+        right: -5px;
+        top: -6px;
+        z-index: 9;
+        border-radius: 50%;
+        border: 3px solid $green-color;
+      }
+    }
+  }
+
+  .ant-progress-inner {
+    border-radius: 20px;
+    background: $bg-grey;
+  }
+
+  .ant-progress-text {
+    color: $green-color;
+    font-size: 1.3rem;
+  }
+}
+
+.ant-popover {
+  .ant-popover-content {
+    .ant-popover-arrow {
+      display: none !important;
+    }
+
+    .ant-popover-inner {
+      border-radius: 15px;
+
+      .ant-popover-inner-content {
+        background: $white-color;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.07);
+        padding: 18px 0 18px 20px;
+        border-radius: 15px;
+
+        .ant-row {
+          .ant-col {
+            padding-bottom: 10px;
+
+            .ant-checkbox-wrapper {
+              font-weight: $font-weight-semibold;
+              font-size: 1.4rem;
+              line-height: 1.8rem;
+              color: $black-color;
+            }
+
+            &:last-child {
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-popover-placement-bottomLeft {
+  padding-top: 9px;
+}
+
+.ant-popconfirm {
+  .ant-popover-inner-content {
+    padding: 18px 18px 18px 20px !important;
+
+    .ant-btn-default {
+      background: $white-color;
+      border-color: $green-color;
+      -webkit-border-radius: 1rem;
+      -moz-border-radius: 1rem;
+      border-radius: 1rem;
+      padding: 0 18px;
+    }
+
+    .ant-btn-primary {
+      background: $green-color;
+      border: none;
+      -webkit-border-radius: 1rem;
+      -moz-border-radius: 1rem;
+      border-radius: 1rem;
+      padding: 0 18px;
+    }
+  }
+}
+
+.ant-spin-nested-loading>div>.ant-spin {
+  max-height: 100%;
+}

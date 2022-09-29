@@ -1,0 +1,100 @@
+%list-style {
+  color: $black-color;
+  font-size: 1.2rem;
+  font-weight: $font-weight-semibold;
+  .before {
+    color: $gray-light-color;
+    font-size: 1rem;
+    padding-right: 4px;
+    font-weight: $font-weight-medium;
+  }
+}
+.list-item {
+  .normal-item {
+    border-bottom: 1px dashed $grey-border-color;
+    padding: 8px 0 8px 0;
+    cursor: pointer;
+
+    .list-item-name {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      color: $black-color;
+      font-weight: $font-weight-bold;
+      padding-left: 3rem;
+    }
+  }
+
+  .normal-item-active {
+    .list-item-name {
+      background: $primary-color;
+      border-radius: 1rem;
+      color: $white-color;
+      padding: 8px 0 8px 3rem;
+      min-width: 90%;
+    }
+  }
+
+  .list-customer {
+    background: $white-color;
+    border: 1px solid $list-border;
+    border-radius: 5px;
+    margin-bottom: 6px;
+    cursor: pointer;
+
+    &__content {
+      font-weight: $font-weight-normal;
+
+      &-name {
+        padding: 8px 7px;
+        font-weight: $font-weight-semibold;
+        .dot {
+          background: $green-color;
+          border-radius: 50%;
+          width: 6px;
+          height: 6px;
+          margin-right: 8px;
+        }
+
+        @extend %align-items-center;
+        border-bottom: 1px dashed $list-border;
+        font-size: 1.3rem;
+      }
+
+      &-gender {
+        display: flex;
+        padding: 4px 0 4px 10px;
+
+        &--left {
+          border-right: 1px solid $gray-light-color;
+          padding-right: 10px;
+        }
+
+        &--right {
+          padding-left: 10px;
+        }
+
+        &--right, &--left {
+          @extend %list-style;
+        }
+      }
+
+      &-contract, &-date {
+        @extend %list-style;
+        padding: 4px 0 4px 10px;
+      }
+
+      &-date {
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .list-customer-active {
+    background: $green-light-color;
+    border: 1px solid $green-color;
+
+    .color-green {
+      color: $green-color
+    }
+  }
+}

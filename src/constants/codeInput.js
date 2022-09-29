@@ -1,0 +1,8 @@
+export const CODE_INPUT = {
+  BACKSPACE_KEY: 8,
+  LEFT_ARROW_KEY: 37,
+  UP_ARROW_KEY: 38,
+  RIGHT_ARROW_KEY: 39,
+  DOWN_ARROW_KEY: 40,
+  E_KEY: 69,
+};

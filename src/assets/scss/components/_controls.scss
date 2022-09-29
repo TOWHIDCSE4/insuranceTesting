@@ -1,0 +1,31 @@
+// .form-group{
+
+// }
+
+.form-control {
+  margin-top: 5px;
+  height: 40px;
+  width: 100%;
+  @extend %input;
+  border-radius: 5px !important;
+  background: #f8f8f8;
+  font-size: 12px;
+  &:focus {
+    border: 1px solid $green-table-bg;
+  }
+  .ant-input {
+    background: #f8f8f8 !important;
+  }
+}
+
+.form-label {
+  color: $black-color !important;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.error-msg {
+  margin: 5px 0px 5px 0px;
+  font-size: 10px;
+  color: $red-color;
+}

@@ -1,0 +1,148 @@
+%border {
+  border-bottom: 1px solid $grey-border-color;
+}
+%top-content {
+  background: $green-light-color;
+  padding: 11px 80px 11px 20px;
+  @extend %flex-centered;
+}
+%style-title {
+  @extend %flex-row-wrap;
+  @extend %item-center;
+  @extend %border;
+  padding: 9px 20px !important;
+  min-height: 49px;
+
+  h5 {
+    font-size: 1.6rem;
+  }
+
+  button {
+    margin-left: auto;
+  }
+}
+
+.customer-care {
+  margin-top: 16px;
+  overflow-y: hidden;
+  h3 {
+    padding: 15px 20px 15px 20px;
+    @extend %border;
+  }
+
+  .ant-row {
+    height: calc(100vh - 200px);
+  }
+
+  .scroll-item {
+    .list-item {
+      overflow-y: scroll;
+      max-height: calc(100vh - 370px);
+    }
+  }
+
+  &__left {
+    padding: 12px 10px 0 15px;
+    border-right: 1px solid $grey-border-color;
+
+    .input-item-search {
+      margin-bottom: 8px;
+    }
+
+    .filter {
+      margin-bottom: 13px;
+    }
+
+    .ant-pagination {
+      padding: 2rem 0 0 0;
+    }
+  }
+
+  &__center {
+    border-right: 1px solid $grey-border-color;
+
+    &--progress {
+      @extend %top-content;
+
+      span {
+        margin-right: 10px;
+      }
+    }
+
+    &--event {
+      @extend %style-title;
+      .btn-primary {
+        height: 3rem;
+      }
+    }
+
+    &--footer {
+      display: flex;
+      column-gap: 26px;
+      justify-content: flex-end;
+      padding: 15px 20px 29px 0;
+    }
+
+  }
+
+  &__right {
+    &--top {
+      @extend %top-content;
+      @extend %flex-end;
+      background: $green-light-color;
+      padding: 11px 15px 11px 0;
+    }
+
+    &--event {
+      @extend %style-title;
+
+      .btn-primary {
+        height: 3rem;
+      }
+
+      &--left {
+        @extend %inline-center;
+        .filter {
+          height: 3rem;
+
+          &__btn {
+            height: 3rem;
+          }
+        }
+        h5 {
+          margin-right: 18px;
+        }
+      }
+    }
+
+    &--list {
+      background: $gray-1;
+    }
+    &--footer {
+      display: flex;
+      justify-content: flex-end;
+      padding: 15px 20px 29px 0;
+      background: $gray-1;
+    }
+    &--info {
+      min-height: 122px;
+      h3 {
+        @extend %align-items-center;
+        column-gap: 10px;
+        color: $green-color;
+        border-bottom: none !important;
+        font-size: 1.6rem;
+        font-weight: $font-weight-semibold;
+      }
+      ul {
+        padding-left: 40px;
+        li {
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+          color: $black-color;
+          list-style: disc;
+        }
+      }
+    }
+  }
+}

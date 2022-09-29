@@ -1,0 +1,214 @@
+// History modal
+.history-modal {
+  .ant-modal-close {
+    display: none;
+  }
+
+  .ant-modal-footer {
+    position: relative;
+    top: -14px;
+    .ant-btn {
+      margin-top: 10px;
+      width: 127px;
+    }
+    .ant-btn-default {
+      position: relative;
+      left: -10px;
+    }
+  }
+  .ant-modal-body {
+    padding: 0px 0px 30px 0px;
+    overflow: hidden;
+  }
+
+  .history-table-container {
+    max-height: 460px;
+    overflow-y: scroll;
+    .history-table {
+      width: 100%;
+      thead {
+        tr {
+          background-color: $secondary-color;
+          th {
+            padding: 10px 0px 10px 24px;
+            text-align: left;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          border-bottom: 1px solid $grey-border-color;
+          &:last-child {
+            border-bottom: 0px solid $grey-border-color;
+          }
+          cursor: pointer;
+          &:hover {
+            background-color: $secondary-color;
+            color: $black-color;
+          }
+          td {
+            padding: 10px 0px 10px 24px;
+          }
+        }
+      }
+      .active-history {
+        background-color: $green-table-bg;
+        color: $white-color;
+        &:hover {
+          background-color: $green-table-bg;
+          color: $white-color;
+        }
+      }
+    }
+  }
+}
+
+// Closing Modal
+.closing-popover {
+  .ant-popover-content {
+    .ant-popover-arrow {
+      display: block !important;
+    }
+    .ant-popover-inner {
+      .ant-popover-inner-content {
+        padding: 5px 0 24px 0px;
+      }
+    }
+  }
+  .closing-container {
+    width: 335px;
+    .closing-body {
+      display: flex;
+      justify-content: center;
+      padding-top: 15px;
+      .form-group {
+        width: 270px;
+      }
+    }
+    .ant-col {
+      .ant-form-item-label {
+        label {
+          color: #333333 !important;
+        }
+      }
+    }
+    .closing-footer {
+      display: flex;
+      justify-content: center;
+      column-gap: 10px;
+
+      .closing-btn {
+        width: 127px;
+        .btn-cancel {
+          @extend %btn-bg-white;
+          color: $red-color;
+          border: 1px solid $red-color;
+
+          &:hover {
+            @extend %btn-bg-white;
+            color: $red-color;
+            border: 1px solid $red-color;
+            opacity: 0.7;
+          }
+
+          &:active {
+            @extend %btn-bg-white;
+            color: $red-color;
+            border: 1px solid $red-color;
+            opacity: 0.7;
+          }
+
+          &:focus {
+            @extend %btn-bg-white;
+            color: $red-color;
+            border: 1px solid $red-color;
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+    .ant-divider-horizontal {
+      margin: 14px 0px !important;
+    }
+  }
+}
+
+.closing {
+  &__input {
+    height: 40px;
+    width: 100%;
+    @extend %input;
+    border-radius: 5px !important;
+    background: #f8f8f8;
+    font-size: 12px;
+    &:focus {
+      border: 1px solid $green-table-bg;
+    }
+  }
+}
+
+//Fiduciary value
+.fiduciary_table_input {
+  height: 30px;
+  width: 10rem;
+  @extend %input;
+  border-radius: 5px !important;
+  background: #ffffff;
+  font-size: 12px;
+  &:focus {
+    border: 1px solid $green-table-bg;
+  }
+}
+
+.minh_table {
+  font-size: 12px;
+  font-weight: 600;
+  thead {
+    th {
+      font-size: 13px;
+      font-weight: 700;
+      &:last-child {
+        padding: 5px;
+      }
+    }
+  }
+  .table_top {
+    .invest_more {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      position: relative;
+      text-transform: uppercase;
+      top: 24px;
+      right: 10px;
+    }
+  }
+
+  .merge-heading {
+    position: relative;
+    top: 14px;
+  }
+}
+
+.save-confirmation {
+  .ant-btn-primary {
+    @extend .btn-primary;
+  }
+  .ant-btn-default {
+    @extend .btn-danger;
+  }
+  .ant-btn-primary,
+  .ant-btn-default {
+    height: 28px;
+    padding: 0px 20px;
+    position: relative;
+    top: 5px;
+  }
+  .ant-popover-buttons {
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    column-gap: 8px;
+  }
+}

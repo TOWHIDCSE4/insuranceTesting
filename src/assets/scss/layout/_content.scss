@@ -1,0 +1,17 @@
+.main-wrapper {
+  padding: 0 28px 0 28px;
+  position: relative;
+
+  .title {
+    @extend %flex-row-wrap;
+    column-gap: 1rem;
+    padding: 2rem 0;
+  }
+
+  .content-box {
+    background: $white-color;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+  }
+}
+

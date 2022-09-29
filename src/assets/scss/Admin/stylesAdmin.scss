@@ -1,0 +1,126 @@
+@import '../styles.scss';
+
+.admin_header {
+    background-color: #fff;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px -30px 13px;
+    padding: 0px 32px;
+
+    .admin_header_func {
+        display: flex;
+        align-items: center;
+
+        button {
+            padding: 0px 24px;
+            margin-right: 7px;
+            height: 35px;
+
+            img {
+                margin-right: 10px;
+            }
+        }
+
+        .icon_setting {
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .setting_modal {
+            position: absolute;
+            right: 10px;
+            top: 50px;
+            z-index: 10;
+            background-color: #fff;
+            border: 1px solid $gray-light-color;
+            box-shadow: -8px 4px 50px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+
+            div {
+                padding: 17px 13px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                &:hover>label {
+                    color: $green-color;
+                }
+
+                img {
+                    margin-right: 9px;
+                }
+
+                label {
+                    color: $grey-dark-color;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+            }
+
+            div,
+            label {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.container_admin {
+    font-weight: 600;
+    position: relative;
+
+    .admin_title {
+        padding: 13px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .btn_reset-user {
+        min-width: 90px;
+    }
+
+    .dustbin_icon {
+        cursor: pointer;
+    }
+    .ant-checkbox-input{
+        border-radius: 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.ant-table-container{
+    overflow-x: scroll;
+    .ant-table-thead{
+        th{
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+    .ant-table-row {
+        td {
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+}
+.ant-modal{
+    &.ant-modal-confirm-confirm{
+        .ant-modal-body {
+            padding: 24px;
+        }
+    }
+    .ant-modal-content {
+        border-radius: 20px;
+    
+    }
+    .ant-modal-body {
+        padding: 0px 24px;
+    }
+}
+
+
