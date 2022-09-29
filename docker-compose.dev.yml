@@ -1,0 +1,24 @@
+version: "3.7"
+
+services:
+  frontend:
+    build:
+      context: .envs/dev
+      dockerfile: frontend/Dockerfile
+    image: way-frontend:dev
+    volumes:
+      - .:/var/www/app
+    working_dir: /var/www/app
+    ports:
+      - 3001:3000
+    networks:
+      - way
+
+networks:
+  way:
+    name: way
+    driver: bridge
+
+volumes:
+  way_frontend_node_modules_cache:
+    external: true

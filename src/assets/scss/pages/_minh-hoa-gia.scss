@@ -1,0 +1,80 @@
+// Global
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: $primary-color;
+}
+.ant-tabs-tab {
+  &:hover {
+    color: $primary-color;
+  }
+}
+.ant-tabs-ink-bar {
+  background: $primary-color;
+}
+
+// Page Content
+.minh-hoa-gia {
+  padding-bottom: 80px;
+  .minh-header {
+    display: flex;
+    justify-content: space-between;
+    &_btns {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+  }
+  // Tab
+  .tab-extra {
+    display: flex;
+    gap: 20px;
+  }
+
+  .ant-tabs-nav {
+    background-color: $white-color;
+    border-radius: 20px 20px 0 0;
+    padding: 0 20px;
+    margin-bottom: 0;
+  }
+  .ant-tabs-extra-content {
+    display: flex;
+    gap: 30px;
+    span {
+      color: #333333;
+      font-weight: 700;
+    }
+    svg {
+      margin-top: 3px;
+      margin-right: 3px;
+    }
+    .date {
+      display: flex;
+    }
+    .user {
+      display: flex;
+    }
+  }
+
+  // Table
+  .minh_table {
+    width: 100%;
+    background: $white-color;
+    color: $black-color;
+    border-radius: 0 0 20px 20px;
+    .table_top {
+      th {
+        border: 1px solid $border-color;
+        padding: 10px;
+        background: $table-bg;
+      }
+    }
+    th {
+      border: 1px solid $border-color;
+      padding: 10px;
+    }
+    td{
+      padding: 10px;
+      border: 1px solid $border-color;
+      text-align: right;
+    }
+  }
+}

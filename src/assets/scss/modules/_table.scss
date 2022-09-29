@@ -1,0 +1,107 @@
+.table-common {
+  .ant-table-thead tr {
+    th {
+      background: $secondary-color;
+      padding: 9px 10px;
+      font-size: 1.4rem;
+      border-bottom: none;
+      font-weight: $font-weight-semibold;
+
+      &::before {
+        display: none;
+      }
+
+      &:first-child {
+        border-top-left-radius: 0 !important;
+      }
+    }
+  }
+
+  .ant-table-tbody {
+    tr {
+      td {
+        font-size: 1.4rem;
+        border-bottom: 1px solid $grey-table-border;
+        padding: 9px 10px !important;
+        vertical-align: middle;
+
+        &.green-color {
+          color: $green-color;
+          .ant-checkbox-checked:after {
+            border: none !important;
+            border-color: none !important;
+          }
+        }
+      }
+    }
+
+    .ant-table-measure-row {
+      td {
+        padding: 0 !important;
+      }
+    }
+  }
+  //check box color
+  .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: $green-color !important;
+    border-color: $green-color !important;
+  }
+
+  .ant-checkbox-indeterminate .ant-checkbox-inner::after {
+    background-color: $green-color !important;
+  }
+
+  .ant-checkbox:hover .ant-checkbox-inner {
+    border-color: $green-color !important;
+  }
+
+  .ant-checkbox-checked:after {
+    border-color: $green-color !important;
+  }
+
+  .ant-checkbox-input:focus + .ant-checkbox-inner {
+    border-color: $green-color !important;
+  }
+
+  .checkbox_cell {
+    .ant-checkbox-inner {
+      border-color: $grey-bg-color !important;
+      background-color: $white-color !important;
+      width: 20px;
+      height: 20px;
+      border: 2px solid;
+    }
+
+    .ant-checkbox:hover .ant-checkbox-inner {
+      border-color: $yellow-light-checkbox !important;
+    }
+
+    .ant-checkbox-checked {
+      background-color: $white-color !important;
+      border-color: $yellow-light-checkbox !important;
+      width: 20px;
+      height: 20px;
+    }
+
+    .ant-checkbox-checked:after {
+      border: none !important;
+      border-color: none !important;
+    }
+
+    .ant-checkbox-input:focus + .ant-checkbox-inner {
+      border-color: $yellow-light-checkbox !important;
+    }
+
+    .ant-checkbox-checked > .ant-checkbox-inner {
+      border-color: $yellow-light-checkbox !important;
+    }
+
+    .ant-checkbox-checked .ant-checkbox-inner:after {
+      border-color: $yellow-light-checkbox !important;
+      border: 2.5px solid #fff;
+      border-top: 0;
+      border-left: 0;
+      top: 45% !important;
+    }
+  }
+}

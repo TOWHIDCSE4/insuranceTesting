@@ -1,0 +1,48 @@
+.container .main-wrapper{
+  background-color: #F8F8F8;
+}
+.financial-title {
+  margin-top: 20px;
+}
+.financial {
+  filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.04));
+  .ant-card-body {
+    padding: 20px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+  &__card {
+    border-radius: 20px;
+    .ant-card-body {
+      display: flex;
+    }
+  }
+  &__image {
+    width: 160px;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__content {
+    padding: 20px;
+  }
+  &__dec {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #666666;
+  }
+  .card-top {
+    position: absolute;
+    width: 95.19px;
+    height: 30.94px;
+    right: 11px;
+    top: -10px;
+    background: #ffffff;
+    z-index: 1;
+    border-radius: 20px 10px 0 0px;
+  }
+}

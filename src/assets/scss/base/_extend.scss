@@ -1,0 +1,160 @@
+%tex-center {
+  text-align: center;
+}
+
+%bg-cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+%align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+%flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%flex-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+%flex-end {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+%flex-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+%flex-row-wrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+%row-center {
+  justify-content: center;
+}
+
+%item-center {
+  align-items: center;
+}
+
+%inline-center {
+  display: inline-flex;
+  align-items: center;
+}
+
+%btn {
+  @extend %flex-centered;
+  font-weight: $font-weight-bold;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  line-height: 1.4rem;
+  height: 35px;
+  cursor: pointer;
+  padding: 0 26px;
+  outline: 0;
+  border: none;
+  box-shadow: none;
+}
+
+%btn-bg-grey {
+  @extend %btn;
+  background-color: $secondary-color;
+}
+
+%btn-bg-green {
+  @extend %btn;
+  background: linear-gradient(180deg, #36b872 0%, #30a867 100%);
+}
+
+%btn-bg-white {
+  @extend %btn;
+  background-color: $white-color;
+}
+
+%input {
+  border: none;
+  padding: 0 1.3rem;
+  font-weight: $font-weight-bold;
+}
+
+%input-grey {
+  @extend %input;
+  background: $secondary-color !important;
+  color: $black-color;
+}
+
+.border {
+  border: 1px solid solid $grey-bg-color;
+}
+
+.border-top {
+  border-top: 1px solid solid $grey-bg-color;
+}
+
+.border-left {
+  border-left: 1px solid solid $grey-bg-color;
+}
+
+.border-right {
+  border-right: 1px solid solid $grey-bg-color;
+}
+
+.border-bottom {
+  border-bottom: 1px solid solid $grey-bg-color;
+}
+
+.bg-cover {
+  @extend %bg-cover;
+}
+
+.flex-between {
+  @extend %flex-between;
+}
+
+.flex-centered {
+  @extend %flex-centered;
+}
+
+.flex-around {
+  @extend %flex-around;
+}
+
+.flex-column {
+  @extend %flex-column;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.d-flex-end {
+  display: flex;
+  justify-content: flex-end
+}
+
+.align-items-center {
+  @extend %align-items-center;
+}
+
+.row-center {
+  @extend %row-center;
+}

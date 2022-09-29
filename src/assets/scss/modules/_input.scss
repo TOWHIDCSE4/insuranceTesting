@@ -1,0 +1,104 @@
+.input-item-outline {
+  @extend %input-grey;
+  height: 4rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  width: 100%;
+
+  .ant-picker-input > input {
+    color: $green-color;
+  }
+}
+
+.ant-picker-input > input {
+  font-weight: $font-weight-bold;
+}
+
+.select-item-outline {
+  .ant-select-selector {
+    @extend %flex-centered;
+    height: 4rem !important;
+    border: none !important;
+    background-color: $secondary-color !important;
+    font-size: 1.4rem;
+  }
+  .ant-select-selection-item {
+    font-weight: $font-weight-bold;
+  }
+}
+
+textarea.ant-input {
+  padding: 8px 13px;
+  font-size: 1.4rem;
+}
+
+.input-item-search {
+  @extend %input-grey;
+  height: 3.5rem;
+  border-radius: 10px;
+  font-size: 1.3rem;
+
+  input {
+    @extend %input-grey;
+  }
+}
+
+.input-item-search-dark {
+  background: $blue-bg-color !important;
+  border-radius: 40px;
+  height: 3.5rem;
+  border: none;
+
+  .ant-input-prefix {
+    margin-right: 10px;
+  }
+
+  input {
+    @extend %input;
+    background: none;
+    font-size: 1.3rem;
+    color: $white-color;
+  }
+}
+.input-item-search-gary {
+  background: $grey-light-bg-color !important;
+  border-radius: 10px;
+  height: 3.5rem;
+  border: 0px;
+
+  .ant-input-prefix {
+    margin-right: 10px;
+  }
+
+  .ant-input-prefix {
+    margin-right: 10px;
+  }
+
+  input {
+    @extend %input;
+    background: none;
+    font-size: 1.3rem;
+    color: $white-color;
+    border: 0px;
+    min-width: fit-content;
+  }
+}
+
+.input-item-search-light {
+  @extend %input-grey;
+  border-radius: 10px;
+  height: 3.5rem;
+  border: none;
+
+  .ant-input-prefix {
+    margin-right: 10px;
+    margin-right: 18px;
+  }
+
+  input {
+    @extend %input;
+    background: none;
+    font-size: 1.3rem;
+    color: $black-color;
+  }
+}

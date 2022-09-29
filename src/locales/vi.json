@@ -1,0 +1,124 @@
+{
+  "common": {
+    "login": "Đăng nhập",
+    "manulife": "Manulife",
+    "slogan": "“ Nhiệm vụ của tôi là giúp khách hàng xây dựng nền tảng của sự giàu có và chuyển giao sự thịnh vượng cho thế hệ tiếp theo! ”",
+    "filter": "Bộ lọc",
+    "progress": "Quy trình",
+    "save": "Lưu",
+    "stt": "STT",
+    "date": "Ngày",
+    "content": "Nội dung",
+    "type info": "Loại thông tin",
+    "gender": "Giới tính:",
+    "old": "Tuổi:",
+    "contract": "Hợp đồng:",
+    "sign date": "Ngày ký:",
+    "customer name": "Tên khách hàng",
+    "customer type": "Phân loại",
+    "phone": "SĐT",
+    "last call": "Lần gọi cuối",
+    "after call": "Lần gọi sau",
+    "note": "Ghi chú",
+    "history": "Lịch sử",
+    "solution": "Giải pháp",
+    "consultant": "Tư vấn",
+    "booking": "Đặt lịch hẹn",
+    "no more potential": "Không còn tiềm năng",
+    "setting": "Cấu hình",
+    "logout": "Đăng xuất",
+    "cancel": "Hủy",
+    "cancel create": "Hủy tạo",
+    "create": "Tạo",
+    "create new": "Tạo mới",
+    "delete": "Xóa",
+    "delete title": "Bạn chắc chắn muốn xóa",
+    "input": "Nhập",
+    "type": "Loại",
+    "event": "Sự kiện",
+    "select": "Chọn",
+    "no data": "Không có dữ liệu"
+  },
+  "validate": {},
+  "message": {
+    "create event success": "Thêm sự kiện thành công"
+  },
+  "customer care": {
+    "title": "Danh sách khách hàng",
+    "event title": "Các event sắp tới",
+    "history title": "Lịch sử chăm sóc",
+    "add event": "Thêm event",
+    "sms": "SMS",
+    "email": "Email",
+    "no more potential": "Không còn tiềm năng",
+    "sync info": "Tổng hợp thông tin",
+    "add event title": "Thêm mới event",
+    "edit event title": "Chỉnh sửa event",
+    "add info title": "Thêm thông tin",
+    "edit info title": "Chỉnh sửa thông tin",
+    "event template": "Mẫu sự kiện",
+    "sms template": "Mẫu tin SMS",
+    "email template": "Mẫu nội dung email",
+    "sms title": "Gửi SMS",
+    "email title": "Gửi Email",
+    "email content": "Nội dung email",
+    "sms content": "Nội dung SMS",
+    "add event template": "Tạo mẫu event",
+    "add template": "Thêm mới mẫu"
+  },
+  "dashboard-page": {
+    "title": "Trang chủ",
+    "call-schedule": "Lịch gọi điện",
+    "appointment-schedule": "Lịch hẹn gặp",
+    "customer-care-dashboard": "Khách hàng cần chăm sóc",
+    "missed-appointment": "Cuộc hẹn bị lỡ",
+    "top-potential-customer": "Top 10 khách hàng tiềm năng",
+    "signed-contract": "Hợp đồng ký được",
+    "ratio-contract": "Tỷ lệ hợp đồng/cuộc hẹn"
+  },
+  "call-schedule": {
+    "call": "Gọi điện"
+  },
+  "customer-care-dashboard": {
+    "remind": "Nhắc phí",
+    "CSKH": "CSKH",
+    "feeRemind": "Nhắc nộp phí",
+    "birthday": "Ngày sinh nhật",
+    "dueDate": "Ngày đến hạn: ",
+    "contractId": "Số HD: ",
+    "money": "Số tiền: "
+  },
+  "missed-appointment": {
+    "note": "Tư vấn hợp đồng"
+  },
+  "top-potential-customer": {
+    "potentialPoint": "Điểm tiềm năng",
+    "changeCall": "Chuyển sang lịch gọi điện"
+  },
+
+  "financial solution": {
+    "title": "Giải pháp tài chính"
+  },
+  "survey": {
+    "save": "Lưu thông tin",
+    "process": "Quy trình khảo sát",
+    "title": "Khảo sát khách hàng",
+    "rttitle": "Quy trình khảo sát",
+    "formTitle": {
+      "title1": "1. Những quỹ tài chính sau đây có ý nghĩa thế nào với gia đình anh/chị?",
+      "title2": "2. Anh/Chị đã từng nhận di sản thừa kế?",
+      "title3": "3. Anh/Chị chọn công cụ tài chính nào để tiết kiệm số tiền của mình?",
+      "title4": "4. Theo Anh/Chị những điều gì trong cuộc sống làm cho việc để dành tiền không thành công?",
+      "title5": "5. Nếu nhận biết số năm tạo ra thu nhập tài sản chỉ có 7 năm thì anh/chị sẽ làm gì?"
+    }
+  },
+  "finance knowledge": {
+    "most view": "Bài viết truy cập nhiều nhất trong tuần",
+    "old articles": "Các tin cũ hơn"
+  },
+  "manage content": {
+    "title": "Quản lý nội dung",
+    "articles list title": "Danh sách bài viết",
+    "q&a list title": "Danh sách câu hỏi"
+  }
+}

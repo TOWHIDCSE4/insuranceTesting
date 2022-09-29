@@ -1,0 +1,10 @@
+{
+  "common": {
+    "login": "Login",
+    "setting": "Setting",
+    "logout": "Logout"
+  },
+  "validate": {
+  }
+}
+  
